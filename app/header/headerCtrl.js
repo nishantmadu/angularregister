@@ -6,7 +6,7 @@ function headerCtrl($scope){
       $scope.navText=[{name:"Home",templateUrl:""},
         {name:"Login",templateUrl:"app/login/login.html"},
         {name:"Register",templateUrl:"app/register/register.html"},
-        {name:"Product",templateUrl:""}];
+        {name:"Products",templateUrl:"app/products/products.html"}];
       $scope.loadPage=function(item){
         $scope.contentUrl=item.templateUrl;
       }
