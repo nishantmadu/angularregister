@@ -1,0 +1,7 @@
+<nav class="navbar navbar-light bg-faded">
+  <ul class="nav navbar-nav">
+    <li ng-repeat="item in navText" ng-click="loadPage(item)" class="nav-item active">
+      <a class="nav-link" href="#">{{item.name}}<span class="sr-only">(current)</span></a>
+    </li>
+  </ul>
+</nav>
