@@ -1,3 +1,3 @@
-(function(){
-angular.module("register",[]);
+(function() {
+  angular.module("register", []);
 })();

@@ -7,64 +7,64 @@
 </nav> -->
 
 <div id="wrapper">
-    <div class="overlay"></div>
+  <div class="overlay"></div>
 
-    <!-- Sidebar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
-        <ul class="nav sidebar-nav">
-              <li ng-repeat="item in navText" ng-click="loadPage(item)" class="sidebar-brand">
-                <a class="nav-link" href="#">{{item.name}}<span class="sr-only">(current)</span></a>
-              </li>
-        </ul>
-    </nav>
-    <!-- /#sidebar-wrapper -->
+  <!-- Sidebar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+    <ul class="nav sidebar-nav">
+      <li ng-repeat="item in navText" ng-click="loadPage(item)" class="sidebar-brand">
+        <a class="nav-link" href="#">{{item.name}}<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /#sidebar-wrapper -->
 
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
-        <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+    <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
             <span class="hamb-top"></span>
       <span class="hamb-middle"></span>
     <span class="hamb-bottom"></span>
         </button>
-        <!-- <div class="container">
+    <!-- <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h1>Welcome to the Home Page</h1>
                 </div>
             </div>
         </div> -->
-    </div>
-    <!-- /#page-content-wrapper -->
+  </div>
+  <!-- /#page-content-wrapper -->
 
 </div>
 <!-- /#wrapper -->
 <script type="text/javascript">
-$(document).ready(function () {
-var trigger = $('.hamburger'),
-    overlay = $('.overlay'),
-   isClosed = false;
-
-  trigger.click(function () {
-    hamburger_cross();
-  });
-
-  function hamburger_cross() {
-
-    if (isClosed == true) {
-      overlay.hide();
-      trigger.removeClass('is-open');
-      trigger.addClass('is-closed');
+  $(document).ready(function() {
+    var trigger = $('.hamburger'),
+      overlay = $('.overlay'),
       isClosed = false;
-    } else {
-      overlay.show();
-      trigger.removeClass('is-closed');
-      trigger.addClass('is-open');
-      isClosed = true;
-    }
-}
 
-$('[data-toggle="offcanvas"]').click(function () {
+    trigger.click(function() {
+      hamburger_cross();
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+    }
+
+    $('[data-toggle="offcanvas"]').click(function() {
       $('#wrapper').toggleClass('toggled');
-});
-});
+    });
+  });
 </script>

@@ -1,29 +1,29 @@
 <div ng-repeat="product in productList" class="container">
   <div class="row">
-    <div  class="col-md-2">
-         <img ng-src="{{product.imageUrl}}" class="img-responsive" alt="Mobiles" width="100" height="100"/>
-         <div class="checkbox">
-            <label>
+    <div class="col-md-2">
+      <img ng-src="{{product.imageUrl}}" class="img-responsive" alt="Mobiles" width="100" height="100" />
+      <div class="checkbox">
+        <label>
               <input type="checkbox"> Add to Compare
             </label>
-         </div>
+      </div>
     </div>
 
     <div class="col-md-5">
       <a href="#">
-          <i class="fa fa-heart" aria-hidden="true"></i>
-          <span><strong>{{product.modelName}}<strong></span>
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        <span><strong>{{product.modelName}}<strong></span>
       </a>
-          <ul ng-repeat="feature in product.featureList">
-            <li>{{feature}}</li>
-          </ul>
+      <ul ng-repeat="feature in product.featureList">
+        <li>{{feature}}</li>
+      </ul>
     </div>
     <div class="col-md-5">
-         <i class="fa fa-inr" aria-hidden="true"></i>
-         <span><strong>{{product.modelPrice}}<strong></span>
-           <div >
-             <span>Exchange discount upto <i class="fa fa-inr" aria-hidden="true"></i> 7,000</span>
-           </div>
+      <i class="fa fa-inr" aria-hidden="true"></i>
+      <span><strong>{{product.modelPrice}}<strong></span>
+      <div>
+        <span>Exchange discount upto <i class="fa fa-inr" aria-hidden="true"></i> 7,000</span>
+      </div>
 
     </div>
   </div>

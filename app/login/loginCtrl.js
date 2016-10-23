@@ -1,7 +1,7 @@
-(function(){
-function loginCtrl($scope){
-     
-}
+(function() {
+  function loginCtrl($scope) {
 
-angular.module("login",[]).controller("loginCtrl",loginCtrl);
+  }
+
+  angular.module("login", []).controller("loginCtrl", loginCtrl);
 })();

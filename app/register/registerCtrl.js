@@ -1,5 +1,4 @@
-(function(){
-function registerCtrl($scope){
-}
-angular.module("register",[]).controller("registerCtrl",registerCtrl);
+(function() {
+  function registerCtrl($scope) {}
+  angular.module("register", []).controller("registerCtrl", registerCtrl);
 })();

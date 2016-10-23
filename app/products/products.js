@@ -1,3 +1,3 @@
-(function(){
-angular.module("products",[]);
+(function() {
+  angular.module("products", []);
 })();

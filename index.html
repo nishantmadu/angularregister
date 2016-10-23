@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html ng-app="flipzone">
-  <head>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
-    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="app/register/register.css">
-    <link rel="stylesheet" href="app/login/login.css">
-    <link rel="stylesheet" href="app/header/header.css">
-    <link rel="stylesheet" href="app/products/products.css">
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="app/login/loginAnim.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-  </head>
-  <body>
-    <div class="container" ng-controller="headerCtrl">
-     <div ng-include="headerUrl">
 
-     </div>
+<head>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="app/register/register.css">
+  <link rel="stylesheet" href="app/login/login.css">
+  <link rel="stylesheet" href="app/header/header.css">
+  <link rel="stylesheet" href="app/products/products.css">
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="app/login/loginAnim.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+</head>
 
-     <div ng-include="contentUrl">
+<body>
+  <div class="container" ng-controller="headerCtrl">
+    <div ng-include="headerUrl">
 
-     </div>
-     <div ng-include="">
-
-     </div>
     </div>
 
-    <!--header files-->
-    <script src="app/header/header.js"></script>
-    <script src="app/header/headerCtrl.js"></script>
-    <!--end of header-->
-    <script src="app/register/register.js"></script>
-    <script src="app/register/registerCtrl.js"></script>
+    <div ng-include="contentUrl">
 
-    <script src="app/login/login.js"></script>
-    <script src="app/login/loginCtrl.js"></script>
+    </div>
+    <div ng-include="">
 
-    <script src="app/products/products.js"></script>
-    <script src="app/products/productsCtrl.js"></script>
+    </div>
+  </div>
 
-    <!--main files-->
-    <script src="app/app.js"></script>
+  <!--header files-->
+  <script src="app/header/header.js"></script>
+  <script src="app/header/headerCtrl.js"></script>
+  <!--end of header-->
+  <script src="app/register/register.js"></script>
+  <script src="app/register/registerCtrl.js"></script>
 
-    <!--end of main-->
+  <script src="app/login/login.js"></script>
+  <script src="app/login/loginCtrl.js"></script>
+
+  <script src="app/products/products.js"></script>
+  <script src="app/products/productsCtrl.js"></script>
+
+  <!--main files-->
+  <script src="app/app.js"></script>
+
+  <!--end of main-->
 </body>
-  </body>
+</body>
+
 </html>

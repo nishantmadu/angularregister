@@ -1,7 +1,7 @@
-(function(){
+(function() {
 
-function productsCtrl(){
-  
-}
-angular.module("products",[]).controller("productsCtrl",productsCtrl);
+  function productsCtrl() {
+
+  }
+  angular.module("products", []).controller("productsCtrl", productsCtrl);
 })();
