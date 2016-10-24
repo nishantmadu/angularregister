@@ -15,6 +15,9 @@
     }, {
       name: "Products",
       templateUrl: "app/products/products.html"
+    }, {
+      name: "Gadgets",
+      templateUrl: "app/gadgets/gadgets.html"
     }];
 
     $scope.productList = [{
@@ -45,6 +48,8 @@
         featureList: ["3 GB RAM | 32 GB ROM |", "5.5 inch Full HD Display", "16MP Primary Camera | 8MP Front", "3000 mAh Li-Ion Polymer Battery", "Qualcomm MSM8976 Snapdragon 652 Processor", "1 Year Manufacturer Warranty"]
       }
     ];
+
+    // $scope.gadgetItems = lookupSvc.gadgetList();
 
 
     $scope.loadPage = function(item) {
