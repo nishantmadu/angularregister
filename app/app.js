@@ -1,3 +1,3 @@
 (function() {
-  angular.module("flipzone", ["header", "register", "login", "products", "gadgets"]);
+  angular.module("flipzone", ["header", "register", "login", "products", "gadgets", "payment"]);
 })();
