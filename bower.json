@@ -18,6 +18,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "angular": "angularjs#^1.5.8",
-    "font-awesome": "^4.6.3"
+    "font-awesome": "^4.6.3",
+    "ngGeolocation": "^0.0.8"
   }
 }

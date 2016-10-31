@@ -19,8 +19,8 @@
       name: "Gadgets",
       templateUrl: "app/gadgets/gadgets.html"
     }, {
-      name: "Payment",
-      templateUrl: "app/payment/payment.html"
+      name: "Cart",
+      templateUrl: "app/cart/cart.html"
     }];
 
     $scope.productList = [{

@@ -29,7 +29,7 @@
           dfd.resolve(response);
         })
         .catch(function(response) {
-          dfd.reject(response)
+          dfd.reject(response);
         })
 
       return dfd.promise;
