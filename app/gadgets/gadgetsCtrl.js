@@ -22,5 +22,5 @@
 
   }
 
-  angular.module("gadgets", []).controller("gadgetsCtrl", ["$scope", "gadgetSvc", "$geolocation", gadgetsCtrl]);
+  angular.module("gadgets", ["ngGeolocation"]).controller("gadgetsCtrl", ["$scope", "gadgetSvc", "$geolocation", gadgetsCtrl]);
 })();
